@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(221, 175, 119);
+}
+
+.home-screen {
+  background-color: aqua;
+}
+
+input {
+  width: 250px;
+  padding: 10px 20px;
+  font-size: 25px;
+  margin: 10px;
+}
+
+.title {
+  font-size: 150px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.link {
+  padding: 0px 10px;
+  color: #fff;
+}
+
+.btn {
+  color: #fff;
+  border: solid 3px #fff;
+  font-size: 30px;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.form-btn {
+  margin: 10px;
+  width: 200px;
+  padding: 15px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgb(75, 228, 255);
+  border-color: rgb(75, 228, 255);
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgb(75, 228, 255);
+  border-color: rgb(75, 228, 255);
+}
+
+.login-screen {
+  background: url('../images/login_background.jpg') no-repeat;
+}
+
+.wrapper {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}

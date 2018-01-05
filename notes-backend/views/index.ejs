@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<!--
+	Fractal by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+  <title>Notes App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,500i,600,700,800,900,900i" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <img src="https://lh3.googleusercontent.com/Tq6DlqeLf3TtJhK-zDzHPZfpTF9otSj1pKPosSyx16D5XC6_WH0F6kcorqfGMJBNww=w170" alt=""
+    height="200px" width="200px">
+
+  <style>
+    body {
+      background-color: blanchedalmond;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+    }
+
+    img {
+      size: 60%;
+    }
+
+    h1 {
+      align-content: center;
+      font-size: 70px;
+      font-family: 'Encode Sans Expanded', sans-serif;
+      color: rgb(83, 66, 7)
+    }
+
+    input {
+      background-color: beige;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class='home-screen'>
+
+  </div>
+  <h1 class="title">myNOTES</h1>
+  </div>
+
+  <div class='form'>
+
+    <form method="post" action="/createnote">
+      <input required type="text" name="author" placeholder="author" size=40>
+      <input required type="text" name="description" placeholder="description" size=40>
+      <input required type="date" name="date" placeholder="date" size=20>
+
+      <input type="submit" value="submit">
+
+    </form>
+
+  </div>
+
+  <% notes.forEach(function(note){ %>
+    <div>
+      <ul>
+        <li>
+          <%= note.author + ' ' + note.description + ' ' + note.date %>
+      </ul>
+      </li>
+    </div>
+    <% }); %>
+</body>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<script src="/assets/js/main.js"></script>
+
+</body>
+
+</html>
